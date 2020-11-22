@@ -28,6 +28,7 @@ function createCalculator() {
         },
         clearDisplay() {
             this.display.value = ''
+            this.display.focus()
         },
         deleteOne() {
             this.display.value = this.display.value.slice(0, -1)
